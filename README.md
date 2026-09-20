@@ -1,4 +1,4 @@
-# 🤖 Two-Wheel Robot Controlled by Chatbot
+# 🤖 Robot Controlled by Local LLM
 
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)
 ![RaspberryPi](https://img.shields.io/badge/RaspberryPi-4-red.svg)
@@ -12,10 +12,10 @@
 </p>
 
 ## 📝 Project Description  
-This project is a **two-wheel robot**🛞🛞 controlled by a **chatbot interface**🤖💬.  
+This project is a **two-wheel robot**🛞🛞 controlled by a **local LLM**🤖💬 (Mistral, served by Ollama on the PC).  
 The flow is simple:  
 
-1. 🖥️ **PC** → A chatbot interprets user commands in natural language and translates them into robot instructions (i.e."AV4" or "TG2").  
+1. 🖥️ **PC** → A local Mistral (Ollama) interprets user commands in natural language and translates them into robot instructions (i.e."AV4" or "TG2").  
 2. 🍓 **Raspberry Pi 4** → Forwards the instructions (through Wifi) to the Arduino over serial.  
 3. 🔌 **Arduino DUE Nano** → Controls two FS90R continuous servos (left & right wheels) and executes commands (move forward, backward, turn).  
 4. 🚦 LEDs indicate status:  
@@ -26,7 +26,7 @@ The flow is simple:
 ---
 
 ## ⚙️ Features
-- 💬 **Natural language control** via chatbot (e.g. *"Turn left 90° then move forward 10cm"*)  
+- 💬 **Natural language control** via a local LLM (e.g. *"Turn left 90° then move forward 10cm"*)  
 - 🛠️ **Command translation** into robot actions:  
   - `AVx` → move forward (10cm × x)  
   - `REx` → move backward (10cm × x)  
