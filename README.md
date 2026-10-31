@@ -37,8 +37,6 @@ The flow is simple:
 - ⚡ LED status feedback  
 - 🏎️ Smooth movement with continuous servos
 
-**The project is not finished!** The easy ssh part for transporting commands through Wifi is not done. I didn't finish it because it's easy but takes time. Starting a new and challenging project is what I prefer to do instead of wasting time on it!
-
 ---
 
 ## 🎮 Example Screenshots  
