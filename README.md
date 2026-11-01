@@ -23,19 +23,21 @@ The flow is simple:
    - 🟩 Green = turning  
    - 🟨 Yellow = moving forward/backward  
 
----
+<details>
+<summary>⚙️ <b>Feature list</b></summary>
 
-## ⚙️ Features
-- 💬 **Natural language control** via a local LLM (e.g. *"Turn left 90° then move forward 10cm"*)  
-- 🛠️ **Command translation** into robot actions:  
-  - `AVx` → move forward (10cm × x)  
-  - `REx` → move backward (10cm × x)  
-  - `TGx` → turn left (10° × x)  
-  - `TDx` → turn right (10° × x)  
-  - `NRF` → do nothing  
-- 🔄 Serial communication between PC → Raspberry Pi → Arduino  
-- ⚡ LED status feedback  
-- 🏎️ Smooth movement with continuous servos
+- **Natural language control** via a local LLM (e.g. *"Turn left 90° then move forward 10cm"*)
+- **Command translation** into robot actions:
+  - `AVx` → move forward (10cm × x)
+  - `REx` → move backward (10cm × x)
+  - `TGx` → turn left (10° × x)
+  - `TDx` → turn right (10° × x)
+  - `NRF` → do nothing
+- Serial communication between PC → Raspberry Pi → Arduino
+- LED status feedback
+- Smooth movement with continuous servos
+
+</details>
 
 ---
 
